@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Document</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500&display=swap" rel="stylesheet">
+    <link href="./index.css" rel="stylesheet">
+</head>
+
+<body>
+    <div class="main-container">
+        <div class="left-section">
+            <img class="img1" src="../images/bg-main-desktop.png">
+            <div class="img2">
+                <img src="../images/bg-card-front.png">
+                <div class="content">
+                    <div class="circle"></div>
+                    <div class="small-circle"></div>
+                    <div class="card-disp">
+                        <div id="disp-no">0000 0000 0000 0000</div>
+                        <div id="disp-name">Sahil Thakur</div>
+                    </div>
+                </div>
+            </div>
+            <div class="img3">
+                <img src="../images/bg-card-back.png">
+                <div class="content">
+                    <div id="cvc-disp">000</div>
+                </div>
+            </div>
+        </div>
+        <div class="right-section">
+            <form class="form-container">
+                <h4>CARDHOLDER CARD</h4>
+                <input type="text" name="card-hldr-name" id="cd-name" placeholder="e.g. sahil thakur">
+                <h4>CARD NUMBER</h4>
+                <input type="text" name="card-no" id="cd-num" placeholder="e.g. 1230 4560 5670 0000" maxlength="19">
+                <h4>EXP. DATE(MM/YY)
+                    &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbspCVC</h4>
+                <div class="exp-cvc">
+                    <input type="text" name="card-mm" id="cd-mm" placeholder="MM">
+                    <input type="text" name="card-yy" id="cd-yy" placeholder="YY">
+                    <input type="text" name="card-cvc" id="cd-cvc" placeholder="e.g. 123" maxlength="3">
+                </div>
+                <button type="submit" id="sub-btn">Confirm</button>
+            </form>
+        </div>
+    </div>
+    <script src="./index.js"></script>
+</body>
+
+</html>
